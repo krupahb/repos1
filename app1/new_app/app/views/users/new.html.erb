@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+<%=form_for @user do |f|%>
+<div>
+<%= f.label :firstname%>
+<%= f.text_field :firstname%>
+</div>
+<div>
+<%= f.label :lastname%>
+<%= f.text_field :lastname%>
+</div>
+<div>
+<%= f.label :designation%>
+<%= f.text_field :designation%>
+</div>
+<div>
+<%= f.label :origin%>
+<%= f.text_field :origin%>
+</div>
+<%= f.submit"submit"%>
+
+<%end%>
+
+</body>
+</html>

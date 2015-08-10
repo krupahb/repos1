@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<h1> Welcome to qwinix</h1>
+</head>
+<body>
+<h3>your profile</h3>
+
+<% @users.each do |user| %>
+<table>
+
+<tr>
+<th>firstname</th>
+<th>lastname</th>
+<th>designation</th>
+<th>origin</th>
+</tr>
+<tr>
+<td><%= user.firstname%></td>
+<td><%= user.lastname%></td>
+<td><%= user.designation%></td>
+<td><%= user.origin%></td>
+</tr>
+</table>
+<%end%>
+
+<%= link_to"add user",new_user_path%>
+</body>
+</html>

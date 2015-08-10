@@ -1,0 +1,6 @@
+development:
+ adapter: postgresql
+ port: 5432
+ username: training
+ password: password
+ database: training
